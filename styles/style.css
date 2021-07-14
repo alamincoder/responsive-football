@@ -17,12 +17,6 @@ body{
     grid-template-columns: repeat(2, 1fr);
     padding: 10% 8%;
 } 
-.content{
-    align-items: center;
-    /* width: 50%; */
-    /* justify-content: center; */
-    /* margin: 207px 102px 27px 156px; */
-}
 .content h2{
     color: #fff;
     font-weight: 700;
@@ -42,17 +36,19 @@ body{
 .live-btn:hover{
     background-color: #000;
 }
-/* .image{
-    width: 50%;
-}     */
 .image img{
     width: 556px;
     height: 438px;
     padding-left: 10%;
-    /* margin: 153px 14px 86px 0px; */
+}
+.ban{
+    transition: transform 1s;
+}
+.ban:hover {
+    transform: translate(-50px, -50px);
 }
 
-/* All pleayers Section  */
+/* ----------------------------All pleayers Section----------------------------  */
 .players-info{
     padding: 5% 10%;
 }
@@ -73,8 +69,8 @@ body{
     height: 256px
 }
 
-/* Highlights Section  */
-.highlights{
+/* --------------Highlights Section  --------------*/
+ .highlights{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 5% 10%;
@@ -106,16 +102,123 @@ body{
     width: 100%;
 }
 
-/* Footer section  */
-/* .main-footer{
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-} */
-.footer-logo img{
+/* ----------------------------Footer section----------------------------  */
+footer{
     text-align: center;
+    padding-bottom: 50px;
+}
+.footer-logo img{
+    width: 483.87px;
+    height: 110px;
+}
+.social-icon i{
+    color: #E02C6D;
+    height: 25px;
+    width: 22px;
 }
 
-.main-footer{
-    width: 50%; margin: 0 auto;
+ /* ----------------------------Media Queries----------------------------   */
+@media screen and (max-width: 770px) {
+    .hero-section {
+        background-color: #2D25A0; 
+        height: auto;
+        width: 900px;  
+        
+          
+    }
+    .top-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+}
+
+.image img{
+    width: 500px;
+    height: 450px;
+    padding-top: 100px;
+
+}
+
+.players-info{
+    padding-left: 33%;
+    padding-right: 33%;
+    
+}
+.all-players{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 45px;
+}
+
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 0;
+    
+    
+}
+.high-content h2{
+    font-size: 35px;
+    margin-bottom: 27px;
+    padding: 0px;    
+
+} 
+.high-image img{
+    width: 600px;
+    text-align: center;
+}
+footer{
+    margin-right: -170px;   
+}}
+
+@media only screen and (min-width: 771px) and (max-width:1170px) {
+    .hero-section {
+        background-color: #2D25A0; 
+        height: auto;
+        width: 1200px;  
+}
+    .top-section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+}
+
+.image img{
+    width: 600px;
+    height: 550px;
+
+}
+
+.players-info{
+    padding-left: 33%;
+    padding-right: 33%;
+    
+}
+.all-players{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 45px;
+}
+
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 0;
+}
+.high-content h2{
+    font-size: 50px;
+    margin-bottom: 27px;
+    padding: 0px;    
+
+} 
+.high-image img{
+    width: 800px;
+    padding-top: 20px;
+}
+footer{
+    margin-right: -170px;   
+}
+
 }
