@@ -1,12 +1,11 @@
 body{
     margin: 0;
     padding: 0;
-    width: 100%;
     font-family: 'Poppins', sans-serif;
     background: #FFFFFF;
 }
 
-/* hero section */
+/* ---------------------------hero section-------------------------- */
 .hero-section {
     background-color: #2D25A0; 
     height: 677px;
@@ -69,7 +68,7 @@ body{
     height: 256px
 }
 
-/* --------------Highlights Section  --------------*/
+/* ---------------------------Highlights Section----------------------------*/
  .highlights{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -118,26 +117,23 @@ footer{
 }
 
  /* ----------------------------Media Queries----------------------------   */
+ /* -------------------------Mobile view responsive-------------------------- */
 @media screen and (max-width: 770px) {
     .hero-section {
         background-color: #2D25A0; 
         height: auto;
-        width: 900px;  
-        
-          
+        width: 900px;
     }
     .top-section{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
 }
-
 .image img{
     width: 500px;
     height: 450px;
     padding-top: 100px;
 
 }
-
 .players-info{
     padding-left: 33%;
     padding-right: 33%;
@@ -172,6 +168,7 @@ footer{
     margin-right: -170px;   
 }}
 
+/* -------------------------Tablet view responsive-------------------------- */
 @media only screen and (min-width: 771px) and (max-width:1170px) {
     .hero-section {
         background-color: #2D25A0; 
@@ -219,6 +216,4 @@ footer{
 }
 footer{
     margin-right: -170px;   
-}
-
-}
+}}
