@@ -10,19 +10,18 @@ body{
 .hero-section {
     background-color: #2D25A0; 
     height: 677px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+    width: 100%;    
 }
 .top-section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 10% 8%;
 } 
 .content{
     align-items: center;
+    /* width: 50%; */
     /* justify-content: center; */
-    margin: 207px 102px 27px 156px;
+    /* margin: 207px 102px 27px 156px; */
 }
 .content h2{
     color: #fff;
@@ -43,20 +42,25 @@ body{
 .live-btn:hover{
     background-color: #000;
 }
+/* .image{
+    width: 50%;
+}     */
 .image img{
     width: 556px;
     height: 438px;
-    margin: 153px 14px 86px 0px;
+    padding-left: 10%;
+    /* margin: 153px 14px 86px 0px; */
 }
 
 /* All pleayers Section  */
 .players-info{
-    padding: 70px 200px;
+    padding: 5% 10%;
 }
 .all-players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 45px;
+    grid-column-gap: 30px;
 }
 .player {
     width: 330px;
@@ -67,4 +71,51 @@ body{
 .player img{
     width: 330px;
     height: 256px
+}
+
+/* Highlights Section  */
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5% 10%;
+}
+.high-content{
+    padding-top: 50px;
+}
+.high-content h2{
+    color: #000;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 80px;
+    margin-bottom: 27px;
+    margin-top: 0px; 
+
+}
+.high-btn{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.high-btn:hover{
+    background-color: #000;
+}
+.high-image img{
+    width: 100%;
+}
+
+/* Footer section  */
+/* .main-footer{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+} */
+.footer-logo img{
+    text-align: center;
+}
+
+.main-footer{
+    width: 50%; margin: 0 auto;
 }
